@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    
+}
+#logo{
+    width: 100px;
+}
+.events-card{
+    color: antiquewhite;
+    border-radius: 15px;
+    width: 300px;
+    height: 250px;
+    border: 1px solid rgb(4, 4, 4);
+    text-align: center;
+    box-shadow: 0 6px 8px;
+    padding: 30px;
+    margin-top:124px ;
+}
+#events{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.det{
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 0 1px 4px;
+    color: white;
+
+}
+header{
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+
+}
+footer{
+    
+    text-align: center;
+    padding: 10px;
+    background-color: black;  
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.event-cards{
+    color: antiquewhite;
+    border-radius: 15px;
+    width: 400px;
+    height: 435px;
+    border: 1px solid rgb(4, 4, 4);
+    text-align: center;
+    box-shadow: 0 6px 8px;
+    padding: 30px;
+    margin-top:50px ;
+    
+}
+.full-form{
+    color: antiquewhite;
+    border-radius: 15px;
+    width: 355px;
+    height: 211px;
+    border: 1px solid rgb(4, 4, 4);
+    text-align: center;
+    box-shadow: 0 3px 4px;
+    padding: 20px;
+    margin-top:20px ;
+    
+}
+footer p{
+    color: white;
+
+}
+nav{
+    display: flex;
+    gap: 20px;
+}
+.nav-link:hover{
+    color: blue;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+input{
+    color: white;
+    background-color: black;
+}

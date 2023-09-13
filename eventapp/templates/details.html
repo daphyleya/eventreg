@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FULL STACK DEVELOPMENT</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="https://cdn.logojoy.com/wp-content/uploads/2018/08/23161105/39.png" alt="Logo For EFUTUREX">
+        <nav>
+           <a class="nav-link" href="Home">Home</a>
+           <a class="nav-link" href="Login">Login</a>
+           <a class="nav-link" href="Registration">Registration</a>
+        </nav>
+
+    </header>
+    <section id="events">
+        <div class="event-cards">
+            <h2 class= "event_title">{{event.event_title}}</h2>
+            <p class= "event_location">{{event.event_location}}</p>
+            <p class= "event_date">{{event.event_date}}</p>
+            <p class= "event_description">{{event.event_description}}</p>
+
+            <form action="{% url 'eventdetail' event.pk %}" method="POST" class="full_form">
+                <h3>Apply for this course</h3>
+                {% csrf_token %}
+                {{form.as_p}}
+                <input type="submit" value="Apply">
+            </form>
+        </div>
+    </section>
+    <footer style="position: static;">
+        <p>© 2023 Event Registration System</p>
+
+    </footer>
+    
+    
+</body>
+</html>
